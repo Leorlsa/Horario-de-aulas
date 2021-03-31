@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabela.css">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/nft3yri.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" />
+    
+    <title>Horário de Aulas</title>
+</head>
+<body>
+
+    <div class="bg-modal" id="modal">
+        <div class="modal">
+            
+            <div class="dias">
+                <p id = "titulodomodal">PREENCHA AS INFORMAÇÕES ABAIXO:</p>
+                <hr>
+                <p id = "nomemodal">NOME: <input id = "caixadonomemodal" type="text"><br></p>
+                <p id = "turmamodal">CURSO: <input id = "caixadaturmamodal" type="text"></p>
+                <select  id="lista" onchange="dados()">
+                    <option value="manha">MANHÃ</option>
+                    <option value="tarde">TARDE</option>
+                    <option value="noite">NOITE</option>
+                </select>
+                <hr>
+                <p id = "Segunda">SEGUNDA-FEIRA:<br></p>
+                <p id = "segundaAB"><label id="turnoAB1">7:30 as 9:10:   </label> <input id = "caixaD2H1" type="text" placeholder="Nome da matéria.">  LINK: <input  id = "LinksegundaAB" type="text" placeholder="Digite o link da aula."><br></p>
+                <p id = "segundaCD"><label id="turnoCD1">9:30 as 11:20:  </label><input id = "caixaD2H2"type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinksegundaCD" type="text" placeholder="Digite o link da aula."><br> </p>
+                <p id = "segundaEF"><label id="turnoEF1">11:30 as 13:00: </label><input id = "caixaD2H3"type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinksegundaEF" type="text" placeholder="Digite o link da aula."></p>
+                <hr>
+                <p id = "Terca">TERÇA-FEIRA:<br></p>
+                <p id = "tercaAB"><label id="turnoAB2">7:30 as 9:10:   </label><input id = "caixaD3H1" type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinktercaAB" type="text" placeholder="Digite o link da aula."><br></p>
+                <p id = "tercaCD"><label id="turnoCD2">9:30 as 11:20:  </label><input id = "caixaD3H2" type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinktercaCD" type="text" placeholder="Digite o link da aula."><br> </p>
+                <p id = "tercaEF"><label id="turnoEF2">11:30 as 13:00: </label><input id = "caixaD3H3" type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinktercaEF" type="text" placeholder="Digite o link da aula."></p>
+                <hr>
+                <p id = "Quarta">QUARTA-FEIRA:<br></p>
+                <p id = "quartaAB"><label id="turnoAB3">7:30 as 9:10:   </label><input id = "caixaD4H1" type="text" placeholder="Nome da matéria.">   LINK: <input id = "LinkquartaAB" type="text" placeholder="Digite o link da aula."><br></p>
+                <p id = "quartaCD"><label id="turnoCD3">9:30 as 11:20:  </label><input id = "caixaD4H2"type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinkquartaCD" type="text" placeholder="Digite o link da aula."><br> </p>
+                <p id = "quartaEF"><label id="turnoEF3">11:30 as 13:00: </label><input id = "caixaD4H3"type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinkquartaEF" type="text" placeholder="Digite o link da aula."></p>
+                <hr>
+                <p id = "Quinta">QUINTA-FEIRA:<br></p>
+                <p id = "quintaAB"><label id="turnoAB4">7:30 as 9:10:  </label><input id = "caixaD5H1" type="text" placeholder="Nome da matéria.">   LINK: <input id = "LinkquintaAB" type="text" placeholder="Digite o link da aula."><br></p>
+                <p id = "quintaCD"><label id="turnoCD4">9:30 as 11:20:  </label><input id = "caixaD5H2"type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinkquintaCD" type="text" placeholder="Digite o link da aula."><br> </p>
+                <p id = "quintaEF"><label id="turnoEF4">11:30 as 13:00: </label><input id = "caixaD5H3"type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinkquintaEF" type="text" placeholder="Digite o link da aula."></p>
+                <hr>
+                <p id = "Sexta">SEXTA-FEIRA:<br></p>
+                <p id = "sextaAB"><label id="turnoAB5">7:30 as 9:10:   </label><input id = "caixaD6H1" type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinksextaAB" type="text" placeholder="Digite o link da aula."><br></p>
+                <p id = "sextaCD"><label id="turnoCD5">9:30 as 11:20:  </label><input id = "caixaD6H2" type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinksextaCD" type="text" placeholder="Digite o link da aula."><br> </p>
+                <p id = "sextaEF"><label id="turnoEF5">11:30 as 13:00: </label><input id = "caixaD6H3" type="text" placeholder="Nome da matéria.">    LINK: <input id = "LinksextaEF" type="text" placeholder="Digite o link da aula."></p>
+            </div>
+            <hr>
+            <button  id="botao" onclick="naoexiste();dados();modal()" >CONFIRMAR</button>
+            
+        </div>
+    </div>
+    
+    <header>
+        <div id="nome">  ALUNO(A): Maria Eduarda</div>
+        <div id="turma">     / CURSO: Psicologia</div>
+        <div id="btn"><button id="editar" onclick="modal2()">EDITAR TABELA</button></div>
+    </header>
+    <img src = "TESTE.png" class= "logomarca2">
+
+    <table id="table" border = "1" >
+        <th class = "horariostable">HORÁRIOS</th>
+        <th class = "segundatable">SEGUNDA</th>
+        <th class = "tercatable">TERÇA</th>
+        <th class = "quartatable">QUARTA</th>
+        <th class = "quintatable">QUINTA</th>
+        <th class = "sextatable">SEXTA</th>
+       <tr>
+        <td><label id="turnoAB"> 7:30 ÁS 9:10</label></td>
+        <td><a href="javascript:link('LinksegundaAB');"><label id="materiaD2H1">materia1</label></a></td>
+        <td><a href="javascript:link('LinktercaAB');"><label id="materiaD3H1">materia2</label></a></td>
+        <td><a href="javascript:link('LinkquartaAB');"><label id="materiaD4H1">materia3</label></a></td>
+        <td><a href="javascript:link('LinkquintaAB');"><label id="materiaD5H1">materia4</label></a></td>
+        <td><a href="javascript:link('LinksextaAB');"><label id="materiaD6H1">materia5</label></a></td>
+        </tr>
+    
+        <tr>
+        <td><label id="turnoCD">9:30 ÁS 11:10</label></td>
+        <td><a href="javascript:link('LinksegundaCD');"><label id="materiaD2H2">materia6</label></a></td>
+        <td><a href="javascript:link('LinktercaCD');"><label id="materiaD3H2">materia7</label></a></td>
+        <td><a href="javascript:link('LinkquartaCD');"><label id="materiaD4H2">materia8</label></a></td>
+        <td><a href="javascript:link('LinkquintaCD');"><label id="materiaD5H2">materia9</label></a></td>
+        <td><a href="javascript:link('LinksextaCD');"><label id="materiaD6H2">materia10</label></a></td>
+        </tr>
+    
+        <tr>
+        <td><label id="turnoEF">11:20 ÁS 13:00</label></td>
+        <td><a href="javascript:link('LinksegundaEF');"><label id="materiaD2H3">materia11</label></a></td>
+        <td><a href="javascript:link('LinktercaEF');"><label id="materiaD3H3">materia12</label></a></td>
+        <td><a href="javascript:link('LinkquartaEF');"><label id="materiaD4H3">materia13</label></a></td>
+        <td><a href="javascript:link('LinkquintaEF');"><label id="materiaD5H3">materia14</label></a></td>
+        <td><a href="javascript:link('LinksextaEF');"><label id="materiaD6H3">materia15</label></a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
+

@@ -1,0 +1,339 @@
+a:link {
+    text-decoration:none;
+    }
+    a:visited {
+    text-decoration:none;
+    }
+    a:hover {
+    cursor: pointer;
+}
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+    background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    transition: 350ms;
+    overflow-y : scroll;
+    font-family: 'Rubik', sans-serif;
+}
+.modal {
+    width: 40rem;
+    height: 80rem;
+    background-color:#1f4f66;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+    display: table;
+    box-shadow: 5px 3px 3px rgb(49, 49, 49);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+#modal{
+    display: block;
+    font-family: 'Rubik', sans-serif;
+}
+#botao{
+    color:black;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0px 2px 5px #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+    width: 110px;
+    height: 40px;
+    font-family: 'Karla', sans-serif;
+}#botao:hover {
+    background-color: rgb(153, 153, 153);
+
+}
+body{
+    background-color:#1f4f66
+}
+#table{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 500px;
+    border-color: #1f4f66;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 180px;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0px 5px 20px #000;
+    color: rgb(53, 56, 57);
+    margin-left: -2px;
+    font-size: 21px;
+    border-radius: 8px;
+}
+header{
+    border-radius: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-radius: 5px;
+    font-size: 20px;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgb(44, 44, 44);
+}
+#nome{
+    padding: 10px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(53, 56, 57);
+    font-size: 22px;
+}
+#turma{
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+}
+#editar{
+    color: rgb(255, 255, 255);
+    background-color: #1f4f66;
+    box-shadow: 0px 2px 5px #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 40px;
+}#editar:hover{
+    background-color:rgb(153, 153, 153);
+}
+#btn{
+    margin-left: auto;
+    padding: 0px 10px 0px 0px;
+}
+#caixadonomemodal{
+    width: 250px;
+    margin-left: 5px;
+}
+#caixadaturmamodal{
+    width: 248px;
+    margin-left: 4px;
+}
+#Segunda{
+    text-align: center;
+}
+#caixaD2H1{
+    width: 120px;
+    margin-left: 19px;
+
+}
+#caixaD2H2{
+    width: 120px;
+    margin-left: 15px;
+}
+#caixaD2H3{
+    width: 120px;
+    margin-left: 5px;
+}
+#terca{
+    text-align: center;
+}
+#caixaD3H2{
+    width: 120px;
+    margin-left: 15px;
+}
+#caixaD3H1{
+    width: 120px;
+    margin-left: 26px;
+}
+#caixaD3H3{
+    width: 120px;
+    margin-left: 5px;
+}
+#Quarta{
+    text-align: center;
+}
+
+#caixaD4H3{
+    width: 120px;
+    margin-left: 5px;
+}
+#caixaD4H2{
+    width: 120px;
+    margin-left: 15px;
+}
+#caixaD4H1{
+    width: 120px;
+    margin-left: 26px;
+}
+#Quinta{
+    text-align: center;
+}
+#quintaAB{
+    margin-left: 10px;
+}
+#quintaCD{
+    margin-left: 10px;
+}
+#quintaEF{
+    margin-left: 10px;
+}
+#caixaD5H3{
+    width: 120px;
+    margin-left: 5px;
+}
+#caixaD5H2{
+    width: 120px;
+    margin-left: 15px;
+}
+#caixaD5H1{
+    width: 120px;
+    margin-left: 25px;
+}
+#Sexta{
+    text-align: center;
+}
+#sextaAB{
+    margin-left: 10px;
+}
+#sextaCD{
+    margin-left: 10px;
+}
+#sextaEF{
+    margin-left: 10px;
+}
+#caixaD6H3{
+    width: 120px;
+    margin-left: 5px;
+}
+#caixaD6H2{
+    width: 120px;
+    margin-left: 15px;
+}
+#caixaD6H1{
+    width: 120px;
+    margin-left: 25px;
+}
+#botaosalvar{
+    margin-left: 260px;
+}
+.dias{
+    font-size: 25px;
+    font-family: 'Karla', sans-serif;
+    color: rgb(207, 207, 207);
+}
+#list{
+    font-size: 17px;
+}
+#materiaD2H1{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD3H1{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD4H1{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD5H1{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD6H1{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD2H2{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD3H2{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD4H2{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD5H2{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD6H2{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD2H3{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD3H3{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD4H3{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD5H3{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+#materiaD6H3{
+    cursor: pointer;
+    color: #1f4f66;
+    text-decoration: underline;
+}
+.segundatable{
+    width: 150px;
+}
+.tercatable{
+    width: 150px;
+}
+.quartatable{
+    width: 150px;
+}
+.quintatable{
+    width: 150px;
+}
+.sextatable{
+    width: 150px;
+}
+.horariostable{
+    width: 200px;
+}
+#lista{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+}
+.logomarca{
+    margin-left: 1%;
+    width: 50px;
+    align-content:center;
+}
+.logomarca2{
+    margin-top: 48px;
+    position: absolute;
+    width: 90px;
+    align-content:center;
+    margin-left: 49.5%;
+}
